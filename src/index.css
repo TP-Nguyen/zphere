@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body{
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: Ubuntu;
+  color:white;
+  overflow-x: hidden;
+}
+#root{
+  position: absolute;
+  display: flex;
+  max-height: 812px;
+  max-width: 375px;
+  width: 375px;
+  scrollbar-color: rgb(000, 000, 000, 0.7) transparent;
+  scrollbar-width: thin;
+}
+@media (min-width:400px){
+  .smallBlock{
+    height: 95px;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(000, 000, 000, 0.7) transparent;
+  }
+  .middleBlock,
+  .stories{
+    height: 200px;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(000, 000, 000, 0.7) transparent;
+  }
+  #Beitragsart ul,
+  #Beitragsart{
+    height: 35px;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(000, 000, 000, 0.7) transparent;
+  }
+}
+@media (max-width:400px){
+  .smallBlock{
+    height: 90px;
+  }
+  .middleBlock,
+  .stories{
+    height: 190px;
+  }
+  #Beitragsart{
+    height: 30px;
+  }
+}
+::-webkit-scrollbar{
+  height: 3px;
+  background-color: transparent;
+}
+/* ::-webkit-scrollbar-thumb, */
+/* ::-webkit-scrollbar-track, */
+/* ::-webkit-scrollbar-track-piece, */
+::-webkit-scrollbar-thumb{
+  background-color: rgb(000, 000, 000, 0.7);
+} 
+#headerBar{
+  position: fixed;
+  z-index: 1;
+  height: 50px;
+  width: 100vw;
+  max-width: 375px;
+  align-items: center;
+  justify-content: center;
+  clear: both;
+  color: #fff;
+  /* background: #212121; */
+}
+#headerBar ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 100%; 
+}
+#headerBar ul li{
+  display: block; 
+  text-decoration: none;
+  float: left; 
+  margin: 0;
+  width: calc(100% /3); 
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 36px;
+  font-style: italic;
+}
+#navBar{
+  z-index: 2;
+  position: fixed;
+  top: calc(100vh - 50px);
+  /* left: 0; */
+  height: 50px;
+  width: 100vw;
+  max-width: 375px;
+  clear: both;
+  color: #fff;
+  /* background: #212121; */
+  background-color: #303030;
+}
+#navBar ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+#navBar ul li{
+  display: block; 
+  text-decoration: none;
+  float: left; 
+  margin: 0;
+  width: calc(100% /3); 
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#navBar ul li:nth-child(1){
+  justify-content: flex-start;
+  width: calc(100% /3 - 30px); 
+  padding-left: 30px;}
+
+#navBar ul li:nth-child(3){
+  justify-content: flex-end;
+  width: calc(100% /3 - 30px); 
+  padding-right: 30px;
+}
+#navBar img{
+  width: 35px;
+  height: 35px;
+  
+}
+
+#navBar ul li a:visited,
+#navBar ul li a{
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
+
+#searchBar{
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  /* left: 0; */
+  height: 50px;
+  width: 100vw;
+  max-width: 375px;
+  clear: both;
+  color: #fff;
+  /* background: #212121; */
+  background-color: #303030;
+}
+
+#searchBar ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+#searchBar ul li{
+  display: block; 
+  text-decoration: none;
+  float: left; 
+  margin: 0;
+  width: auto; 
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#searchBar img{
+  width: 15px;
+  height: 15px;
+  margin: 0 10px;
+}
+
+#searchBar li input {
+  outline: none !important;
+  color: #fff;
+  border: 0px;
+  background-color: #212121;
+}
+#searchBar li:nth-child(1){
+  justify-content: flex-start;
+  margin-top: 7.5px;
+  margin-left: 20px;
+  height: 35px;
+  width: 270px;
+  background-color: #212121;
+  border: 1px solid #707070;
+  border-radius: 10px;
+}
+#searchBar li:nth-child(2){
+  position: absolute;
+  right: 16px;
+}
+
+
+#searchBar ul li a:visited,
+#searchBar ul li a{
+  text-decoration: none;
+  color: inherit;
+}
+
+#searchBarFav{
+  z-index: 2;
+  position: fixed;
+  top: 140px;
+  /* left: 0; */
+  height: 40px;
+  width: 100vw;
+  max-width: 375px;
+  clear: both;
+  color: #fff;
+  /* background: #212121; */
+  background-color: #212121;
+}
+
+
+
+
+
+#searchBarFav ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+#searchBarFav ul li{
+  display: block; 
+  text-decoration: none;
+  float: left; 
+  margin: 0;
+  width: calc(100% /3); 
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#searchBarFav img{
+  width: 20px;
+  height: 20px;
+  
+}
+
+#searchBarFav input {
+  color: white;
+  background-color: #212121;
+  border: 1px solid #707070;
+  outline: none !important;
+  border-radius: 10px;
+  font-weight: 100;
+  
+  
+}
+
+
+
+#searchBarFav ul li a:visited,
+#searchBarFav ul li a{
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
+.beitragHookDiv{
+}
+button{
+  display: block; 
+  text-decoration: none;
+  float: left; 
+  margin: 0;
+  width: calc(100% /3);
+  height: 35px;
+  width: 35px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+#ZurückFertigBar {
+  z-index: 2;
+  position: fixed;
+  top: 140px;
+  /* left: 0; */
+  height: 40px;
+  width: 100vw;
+  max-width: 375px;
+  clear: both;
+  color: #fff;
+  /* background: #212121; */
+  background-color: #212121;
+}
+#ZurückFertigBar ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+#ZurückFertigBar ul li{
+  display: block; 
+  text-decoration: none;
+  float: left; 
+  margin: 0;
+  width: calc(100% /3); 
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.testHookDiv{
+
+ /* background-image: url('./img/maria2.png');*/
+}

@@ -1,0 +1,75 @@
+#HeaderBarMyZphere h1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#HeaderBarMyZphere p{
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  font-size: 30px;
+
+
+}
+
+#HeaderBarMyZphere{
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  /* left: 0; */
+  height: 140px;
+  width: 100vw;
+  max-width: 375px;
+  align-items: center;
+  justify-content: center;
+  clear: both;
+  color: #fff;
+  background: #303030;
+
+}
+
+#HeaderBarMyZphere ul{
+  position: absolute;
+  list-style: none;
+  width: 100vw;
+  max-width: 375px;
+  top : 0;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+
+}
+
+#HeaderBarMyZphere ul li{
+  display: block; 
+  text-decoration: none;
+  float: left; 
+  margin: 0;
+  width: calc(100% /2); 
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+ 
+
+}
+
+#HeaderBarMyZphere ul li .active {
+  border-bottom: 2px solid #00B3A6;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+#HeaderBarMyZphere img{
+  height: 50px;
+  width: 55px;
+}

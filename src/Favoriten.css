@@ -1,0 +1,208 @@
+#contentFavoriten{
+  background: #212121;
+    position: absolute;
+    top: 140px;
+    width: 100vw;
+    max-width: 375px;
+    height: calc(100vh - 190px);
+    z-index: 1;
+    overflow-x: auto;
+}
+
+
+#Favoriten{
+   background: #212121;
+    position: absolute;
+    top: 210px;
+    width: 100vw;
+    max-width: 375px;
+    height: auto;
+    overflow-x: hidden;
+    /* min-height: calc(100vh - 190px); */
+    z-index: 1;
+    position: fixed;
+}
+
+.obereLeiste{
+  position: absolute;
+  top: 0px;
+  left: 0;
+  height: 40px;
+  width: 100vw;
+  max-width: 375px;
+  clear: both;
+  color: #fff;
+  background: #212121;
+  
+}
+.obereLeiste img {
+  width: 20px;
+  height: 20px;
+}
+
+.obereLeiste ul{
+  
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+
+}
+
+.obereLeiste ul li{
+  display: block; 
+  text-decoration: none;
+  float: left; 
+  margin: 0;
+  width: calc(100% /3); 
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.untereLeiste{
+  z-index: 10000;
+  position: absolute;
+  display: block;
+  top: 40px;
+  left: 0;
+  height: 30px;
+  width: 100vw;
+  max-width: 375px;
+  clear: both;
+  color: #fff;
+  background: #303030;
+  border-radius: 10px;
+}
+
+
+.untereLeiste ul{
+  list-style: none;
+  padding: 0;
+  height: 100%;
+  margin:0;
+
+
+}
+.untereLeiste ul li{
+  display: block; 
+  text-decoration: none;
+  float: left; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  width: calc(100% /3); 
+  height: 100%;
+  padding: 0;
+  margin: 0;
+ 
+
+}
+
+#Sportlerzeile {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(124px, 100px));
+    grid-auto-flow: dense;
+    margin: 0;
+    grid-template-rows: minmax(90px, 100px);
+    padding: 5px 0;
+    top: 200px;
+    border-bottom: 1px solid #303030;
+    align-items: center;
+
+}
+
+
+#Sportlerzeile:nth-last-child(1){
+  border-bottom: 0px solid #212121;
+}
+
+
+.Sportler{
+  position: relative;
+    display: grid;
+    min-height: 90px;
+    min-width: 60px;
+    place-items: center;
+    text-align: center;
+    padding: 5px;
+    font-size: 16px;
+    background-position: center;
+    border-right: 1px solid #303030;
+
+
+}
+.Sportler img{
+  height: 60px;
+  width: 60px;
+  border-radius: 50px;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px
+
+  
+}
+
+
+#Sportlerzeile .Sportler:nth-last-child(1) {
+
+  
+  border-right: 0px solid #212121;
+
+
+}
+
+.SportlerWaagerecht{
+    display: grid;
+    grid-template-columns: 1;
+    grid-auto-flow: dense;
+    margin: 0;
+    grid-template-rows: minmax(90px, 100px);
+    padding: 5px 0;
+    top: 200px;
+    border-bottom: 1px solid #303030;
+    align-items: center;
+
+
+}
+
+.SportlerWaagerecht img{
+  width: 60px;
+  height: 60px;
+  margin-left: 20px;
+  margin-right: 30px;
+  border-radius: 50px;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px
+}
+
+.SportlerWaagerecht #SportlerReihe {
+  width: 100%;
+  font-size: 20px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.SportlerWaagerecht #SportlerReihe #checkbox{
+  
+  position: absolute;
+  
+  margin-left: 300px;
+}
+
+.blauPunkt{
+  background-color: #00B3A6;
+  height: 15px;
+  width: 15px;
+  border-radius: 50px;
+  z-index: 30;
+  /* position: relative; */
+  margin-left: 40px;
+  top: 5px;
+  position: absolute;
+  /* margin-bottom: 80px; */
+}

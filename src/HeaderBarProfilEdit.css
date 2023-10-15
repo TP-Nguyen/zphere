@@ -1,0 +1,68 @@
+#HeaderBarProfilEdit {
+    position: absolute;
+    z-index: 110;
+    top: 0;
+    left: 0;
+    height: 185px;
+    width: 100vw;
+    max-width: 375px;
+    align-items: center;
+    justify-content: center;
+    clear: both;
+    color: #fff;
+    background: #303030;
+
+}
+
+#HeaderBarProfilEdit ul{
+
+    position: absolute;
+    list-style: none;
+    width: 100vw;
+    max-width: 375px;
+    top : 0;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#HeaderBarProfilEdit ul li{
+
+    display: block; 
+    text-decoration: none;
+    float: left; 
+    margin-top: 10px;
+    width: calc(100% / 4); 
+    top: 100px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+#HeaderBarProfilEdit h1{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+
+}
+
+#HeaderBarProfilEdit h2{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+#HeaderBarProfilEdit h2 img {
+
+
+    height: 50px;
+    width: 50px;
+}
